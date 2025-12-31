@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>For My Best Friend Shreeya 💜</title>
+
+<style>
+/* Body & background */
+body{
+  margin:0;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-family: Arial, sans-serif;
+  background:linear-gradient(135deg,#fdeaff,#e8f0ff);
+  overflow:hidden;
+  position:relative;
+}
+
+/* Sparkly background */
+@keyframes sparkle {
+  0%{transform: translateY(0) scale(1); opacity:1;}
+  100%{transform: translateY(-1000px) scale(0.5); opacity:0;}
+}
+.sparkle {
+  position:absolute;
+  width:6px;
+  height:6px;
+  background:white;
+  border-radius:50%;
+  opacity:0.8;
+  animation: sparkle linear infinite;
+}
+
+/* Card */
+.card{
+  background:white;
+  width:90%;
+  max-width:600px;
+  padding:26px;
+  border-radius:26px;
+  text-align:center;
+  box-shadow:0 18px 35px rgba(0,0,0,0.15);
+  position:relative;
+  z-index:1;
+}
+
+/* Pages */
+.page{display:none; opacity:0; animation:fadein 1s forwards;}
+.page.active{display:block; opacity:1;}
+
+/* Fade-in animation */
+@keyframes fadein {
+  from {opacity:0; transform:translateY(20px);}
+  to {opacity:1; transform:translateY(0);}
+}
+
+/* Text */
+h2{ 
+  color:#9b5de5; 
+  font-size:1.5rem; 
+  margin-bottom:12px;
+}
+
+p{
+  color:#444;
+  font-size:14px;
+  line-height:1.7;
+}
+
+/* Buttons */
+button{
+  margin:8px;
+  padding:10px 20px;
+  border:none;
+  border-radius:30px;
+  background:#9b5de5;
+  color:white;
+  font-size:14px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+button:hover{
+  background:#7b3fe4;
+}
+
+/* Images */
+img{
+  width:100%;
+  border-radius:18px;
+  margin-top:15px;
+}
+
+.manifest{
+  font-style:italic;
+  color:#9b5de5;
+  margin-top:12px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 480px) {
+  h2{ font-size:1.3rem; }
+  p{ font-size:13px; }
+  button{ font-size:13px; padding:8px 16px; }
+  img{ max-width:90%; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Floating hearts container -->
+<div id="hearts"></div>
+
+<div class="card">
+
+<!-- Page 1 -->
+<div class="page active">
+  <h2>Hey Shreeya 💫</h2>
+  <p>I made something special just for you 💜</p>
+  <button onclick="next()">Start 🌷</button>
+</div>
+
+<!-- Page 2 -->
+<div class="page">
+  <h2>Question One &#128049;</h2>
+  <p>Will you be my best friend forever?</p>
+  <button onclick="next()">Yes, forever 💕</button>
+  <button onclick="next()">Obviously 😌💖</button>
+</div>
+
+<!-- Page 3 -->
+<div class="page">
+  <h2>Question Two &#128105;</h2> <!-- Girl emoji -->
+  <p>
+    Will you stay with me through laughs, tears,  
+    and all our random moments?
+  </p>
+  <button onclick="next()">Always 🌙</button>
+  <button onclick="next()">Till we’re old 👵💜</button>
+</div>
+
+<!-- Page 4 -->
+<div class="page">
+  <h2>Last Question &#10024;</h2>
+  <p>
+    Will you keep making memories with me,  
+    no matter where life takes us?
+  </p>
+  <button onclick="next()">Yes, always 🌈</button>
+  <button onclick="next()">No choice 😄💖</button>
+</div>
+
+<!-- Final Page -->
+<div class="page">
+  <h2>Happy New Year 💜✨</h2>
+
+  <!-- Split layout: left = wishes, right = Kim Taehyung vertically centered -->
+  <div style="display:flex; flex-wrap:wrap; gap:12px; justify-content:center; align-items:flex-start; margin-bottom:15px;">
+
+    <!-- Left: Wishes -->
+    <div style="flex:1; min-width:220px; text-align:left;">
+      <p>
+        Dear Shreeya 💜<br>
+        This year, I manifest happiness for you — warm days, bright smiles, and moments that make your heart feel full 🌷<br><br>
+
+        I wish you laughter that comes easily, little surprises that brighten your days, and everything good finding its way to you ✨<br><br>
+
+        I also manifest something special for us 💫 That our luck leads us, step by step, to standing together at the BTS concert in 2026, right here in India 🎤💜<br><br>
+
+        Most of all, I hope I always get to stay — laughing with you, growing with you, because you are my best friend in every season 🤍 No matter where life takes us, I’ll always be right here, on your side.
+      </p>
+
+      <p class="manifest">
+        If luck was ourside, may it guide us there ✨
+      </p>
+
+      <p style="color:#9b5de5;font-weight:bold;">
+        Forever best friends 💜🌙
+      </p>
+    </div>
+
+    <!-- Right: Kim Taehyung vertically centered -->
+    <div style="flex:1; min-width:180px; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; min-height:300px;">
+      <img src="taehyung.jpg" alt="Kim Taehyung" style="width:100%; max-width:200px; border-radius:18px; margin-bottom:8px;">
+      <div style="background:#fdeaff; padding:10px; border-radius:12px; font-size:13px; color:#9b5de5; display:inline-block; margin-bottom:4px;">
+        "Keep shining bright, just like your favorite star 💜"  
+        — Taehyung for Shreeya
+      </div>
+      <div style="font-size:11px; color:#9b5de5; margin-top:4px;">
+        By Gangothri, to my best friend Shreeya 💖
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</div>
+
+<script>
+// Page navigation
+let step = 0;
+let pages = document.getElementsByClassName("page");
+function next(){
+  pages[step].classList.remove("active");
+  step++;
+  if(step >= pages.length) step = pages.length-1;
+  pages[step].classList.add("active");
+}
+
+// Floating hearts
+const heartsContainer = document.getElementById("hearts");
+function createHeart() {
+  const heart = document.createElement("div");
+  heart.classList.add("sparkle");
+  heart.style.left = Math.random() * window.innerWidth + "px";
+  heart.style.width = heart.style.height = Math.random() * 10 + 5 + "px";
+  heart.style.animationDuration = (Math.random() * 5 + 5) + "s";
+  heartsContainer.appendChild(heart);
+  setTimeout(() => heart.remove(), 10000);
+}
+setInterval(createHeart, 300);
+</script>
+
+</body>
+</html>
